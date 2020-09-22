@@ -3,7 +3,7 @@ module.exports = function(ctx) {
 		return;
 	}
 
-	const childProcess = ctx.require('child_process');
+	const childProcess = require('child_process');
 	return childProcess.exec(
 		`cp -r ./libs/smartengine/ ./platforms/android/app/src/main/assets/data`,
 		function(error) {
