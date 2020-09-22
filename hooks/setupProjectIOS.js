@@ -8,9 +8,9 @@ module.exports = function(ctx) {
 		return;
 	}
 
-	var fs = ctx.requireCordovaModule('fs');
-	var path = ctx.requireCordovaModule('path');
-	var os = ctx.requireCordovaModule('os');
+	var fs = ctx.require('fs');
+	var path = ctx.require('path');
+	var os = ctx.require('os');
 
 	function updateConfig(data, update) {
 		return data + os.EOL + update;
