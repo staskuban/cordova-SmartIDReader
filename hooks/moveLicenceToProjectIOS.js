@@ -6,7 +6,7 @@ module.exports = function(ctx) {
 	// WIP;
 	return;
 
-	const childProcess = ctx.requireCordovaModule('child_process');
+	const childProcess = ctx.require('child_process');
 	return childProcess.exec(`cp -r ./libs/smartengine/ ./platforms/ios/`, function(error) {
 		if (error) {
 			console.log(
