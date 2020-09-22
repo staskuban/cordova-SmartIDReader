@@ -8,9 +8,9 @@ module.exports = function(ctx) {
 		return;
 	}
 
-	var fs = ctx.require('fs');
-	var path = ctx.require('path');
-	var os = ctx.require('os');
+	var fs = require('fs');
+	var path = require('path');
+	var os = require('os');
 
 	function updateConfig(data, update) {
 		return data + os.EOL + update;
